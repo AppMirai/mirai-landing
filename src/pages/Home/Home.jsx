@@ -11,7 +11,7 @@ const Home = () => {
             alt="..."
             className="logoMirai"
           />
-          <a className="navbar-brand fw-bold ms-4" href="#page-top">
+          <a className="navbar-brand fw-bold ms-4" href="/">
             Mirai
           </a>
           <button
@@ -257,11 +257,11 @@ const Home = () => {
                         />
                       </video>
                       <div className="mt-4 d-flex flex-column flex-lg-row align-items-center">
-                        <a className="me-lg-3 mb-4 mb-lg-0" href="#">
+                        <a className="me-lg-3 mb-4 mb-lg-0" href="/upload">
                           <img
                             className="app-badge"
                             src="assets/assets/img/button2.png"
-                            alt="..."
+                            alt=""
                           />
                         </a>
                       </div>

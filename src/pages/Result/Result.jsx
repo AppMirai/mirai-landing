@@ -1,8 +1,8 @@
 import React from "react";
 import { useState } from "react";
-import "./upload.css";
+import "./result.css";
 
-function  Upload() {
+function Result() {
   const [image, setImage] = useState(null);
   const handleChange = (e) => {
     setImage(e.target.files[0]);
@@ -51,26 +51,13 @@ function  Upload() {
           <div className="col-md-8">
             <div className="card">
               <div className="card-header">
-                <h5>File Upload</h5>
+                <h5>Result</h5>
               </div>
               <div className="card-block">
                 <form
                   className="dropzone dz-clickable position-relative cursor-pointer"
                 >
-                  <div className="dz-default dz-message">
-                    {image === null ? (
-                      <input type="file" onChange={handleChange} />
-                    ) : (
-                      <div>
-                        <img src={URL.createObjectURL(image)} alt="" />
-                      </div>
-                    )}
-                  </div>
                 </form>
-                <div className="text-center m-t-20">
-                  <img id="file-ip-1-preview" />
-                  <a href="/result" className="btn btn-primary">Upload Now</a>
-                </div>
               </div>
             </div>
           </div>
@@ -111,4 +98,4 @@ function  Upload() {
   );
 }
 
-export default Upload;
+export default Result;
