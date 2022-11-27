@@ -1,13 +1,10 @@
 import React from "react";
-import { useState } from "react";
+import { useParams } from "react-router-dom";
 import "./result.css";
 
 function Result() {
-  const [image, setImage] = useState(null);
-  const handleChange = (e) => {
-    setImage(e.target.files[0]);
-    console.log(e.target.files[0]);
-  };
+  const {uid} = useParams();
+  const imgUrl = (`http://20.89.56.97:8000/uid/${uid}`);
 
   return (
     <>
@@ -54,10 +51,7 @@ function Result() {
                 <h5>Result</h5>
               </div>
               <div className="card-block">
-                <form
-                  className="dropzone dz-clickable position-relative cursor-pointer"
-                >
-                </form>
+                <img src={imgUrl} alt="" className="w-100" />
               </div>
             </div>
           </div>

@@ -9,15 +9,9 @@ function App() {
       <BrowserRouter>
           <div className="container">
             <Routes>
-              <Route path="/">
-                <Route index element={<Home />}/>
-                </Route>
-              <Route path="/upload">
-                <Route index element={<Upload />}/>
-                </Route>
-              <Route path="/result">
-                <Route index element={<Result />}/>
-                </Route>
+              <Route path="/" element={<Home />} index />
+              <Route path="/upload" element={<Upload />} />
+              <Route path="/result/:uid" element={<Result />} />
             </Routes>
           </div>
     </BrowserRouter>

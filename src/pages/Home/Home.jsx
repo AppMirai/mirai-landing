@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./home.css";
 
 const Home = () => {
@@ -74,7 +75,7 @@ const Home = () => {
                 <circle cx="50" cy="50" r="50"></circle>
               </svg>
               <svg
-                class="shape-1 d-none d-sm-block"
+                className="shape-1 d-none d-sm-block"
                 viewBox="0 0 240.83 240.83"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -96,24 +97,24 @@ const Home = () => {
                 ></rect>
               </svg>
               <svg
-                class="shape-2 d-none d-sm-block"
+                className="shape-2 d-none d-sm-block"
                 viewBox="0 0 100 100"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <circle cx="50" cy="50" r="50"></circle>
               </svg>
-              <div class="device-wrapper">
+              <div className="device-wrapper">
                 <div
-                  class="device"
+                  className="device"
                   data-device="iPhoneX"
                   data-orientation="portrait"
                   data-color="black"
                 >
-                  <div class="screen bg-black">
+                  <div className="screen bg-black">
                     <video
                       style={{ width: "100%", height: "100%" }}
                       muted="muted"
-                      autoplay=""
+                      autoPlay=""
                       loop=""
                     >
                       <source
@@ -202,8 +203,8 @@ const Home = () => {
                       id="circleGradient"
                       gradientTransform="rotate(45)"
                     >
-                      <stop class="gradient-start-color" offset="0%"></stop>
-                      <stop class="gradient-end-color" offset="100%"></stop>
+                      <stop className="gradient-start-color" offset="0%"></stop>
+                      <stop className="gradient-end-color" offset="100%"></stop>
                     </linearGradient>
                   </defs>
                   <circle cx="50" cy="50" r="50"></circle>
@@ -248,7 +249,7 @@ const Home = () => {
                       <video
                         style={{ width: "100%", height: "100%" }}
                         muted="muted"
-                        autoplay=""
+                        autoPlay=""
                         loop=""
                       >
                         <source
@@ -257,13 +258,13 @@ const Home = () => {
                         />
                       </video>
                       <div className="mt-4 d-flex flex-column flex-lg-row align-items-center">
-                        <a className="me-lg-3 mb-4 mb-lg-0" href="/upload">
-                          <img
+                        <Link to="/upload">
+                        <img
                             className="app-badge"
                             src="assets/assets/img/button2.png"
                             alt=""
                           />
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -288,7 +289,7 @@ const Home = () => {
             <div className="col-sm-8 col-md-5">
               <div className="ms-5 px-sm-0">
                 <img
-                  class="img-fluid rounded-circle"
+                  className="img-fluid rounded-circle"
                   src="assets/assets/img/Mirai_Logo.png"
                   alt="..."
                 />
@@ -308,7 +309,7 @@ const Home = () => {
               href="https://play.google.com/store/apps/details?id=com.mirai.mirai_app"
             >
               <img
-                class="app-badge"
+                className="app-badge"
                 src="assets/assets/img/google-play-badge.svg"
                 alt="..."
               />
